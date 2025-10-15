@@ -5,9 +5,7 @@ const isNumberEven = (num) => {
     if(num % 2 === 0){
      return true
     }
-    else {
-     return false
-    }
+    return false
  }  
  const getRandomNumber = () => {
     return Math.floor(Math.random() * 100) + 1
