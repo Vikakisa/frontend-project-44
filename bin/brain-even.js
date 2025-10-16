@@ -30,7 +30,7 @@ while(correctAnswersCount < 3){
     else{
         console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
         console.log("Let's try again, " + name + '!')
-        correctAnswersCount = 0
+        break
     }
 }
 if(correctAnswersCount === 3){
