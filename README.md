@@ -3,4 +3,6 @@
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Vikakisa_frontend-project-44)](https://sonarcloud.io/summary/new_code?id=Vikakisa_frontend-project-44)
 
-[brain-even](https://asciinema.org/a/uQw9L2vwjIMrVoktXjyUWYZgj)
+[![asciicast](https://asciinema.org/a/uQw9L2vwjIMrVoktXjyUWYZgj.svg)](https://asciinema.org/a/uQw9L2vwjIMrVoktXjyUWYZgj)
+
+[![asciicast](https://asciinema.org/a/uWgPlzGwcUas21ekGdWAmLZnb.svg)](https://asciinema.org/a/uWgPlzGwcUas21ekGdWAmLZnb)
