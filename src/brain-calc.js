@@ -1,49 +1,21 @@
-#!/usr/bin/env node
-import { getName } from '../src/cli.js'
-const getRandomNumber = () => {
-    return Math.floor(Math.random() * 100) + 1
- }
- const condition = 'What is the result of the expression?'
- const task = () => {
-    const operators = ['+', '-', '*']
-    const randomIndex = Math.floor(Math.random() * 3)
-    const randomOperator = operators[randomIndex]
-    const givenNumber = getRandomNumber()
-    const givenNumber1 = getRandomNumber()
-    console.log('Question: ', givenNumber, randomOperator, givenNumber1)
-    const answer = getName('Your answer: ')
-    const operator = randomOperator
-    let result
-    switch (operator) {
-        case '+':
-            result = givenNumber + givenNumber1
-            break;
-        case '-': 
-            result = givenNumber - givenNumber1
-            break;
-        case '*':
-            result = givenNumber * givenNumber1
-            break;
-    }
-
- }
-console.log('Welcome to the Brain Games!')
-const name = getName('May I have your name? ')
-console.log('Hello, ' + name + '!')
-console.log('What is the result of the expression?')
-let correctAnswersCount = 0
-while(correctAnswersCount < 3){
-    task()
-    if(+answer === result){
-        console.log('Correct!')
-        correctAnswersCount++
-    }
-    else{
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`)
-        console.log("Let's try again, " + name + '!')
-        break
-    }
+export const calculate = (num1, operator, num2) => {
+  let result
+  switch (operator) {
+    case '+':
+      result = num1 + num2
+      break
+    case '-':
+      result = num1 - num2
+      break
+    case '*':
+      result = num1 * num2
+      break
+  }
+  return result
 }
-if(correctAnswersCount === 3){
-    console.log('Congratulations, ' + name)
+
+export const getRandomOperator = () => {
+  const operators = ['+', '-', '*']
+  const randomIndex = Math.floor(Math.random() * 3)
+  return operators[randomIndex]
 }
