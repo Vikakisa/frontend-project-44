@@ -14,3 +14,12 @@ export const getRandomOperator = () => {
   const randomIndex = Math.floor(Math.random() * operators.length)
   return operators[randomIndex]
 }
+
+export const calculateGCD = (a, b) => {
+      while (b !== 0) {
+        const temp = b;
+        b = a % temp;
+        a = temp;
+      }
+      return a;
+  }
