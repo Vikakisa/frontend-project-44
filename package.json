@@ -18,10 +18,13 @@
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.1",
@@ -30,5 +33,8 @@
     "eslint": "^9.37.0",
     "eslint-plugin-import": "^2.32.0",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
