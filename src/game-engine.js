@@ -11,7 +11,7 @@ export const runGame = (gameDescription, generateRound) => {
 
   while (correctAnswersCount < roundsToWin) {
     const { question, correctAnswer } = generateRound()
-    console.log('Question: ', question)
+    console.log('Question:', question)
     const answer = getName('Your answer: ')
 
     if (answer === String(correctAnswer)) {
