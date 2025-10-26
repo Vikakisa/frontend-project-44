@@ -25,5 +25,5 @@ export const runGame = (gameDescription, generateRound) => {
     }
   }
 
-  console.log('Congratulations, ' + name)
+  console.log('Congratulations, ' + name, '!')
 }
