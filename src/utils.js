@@ -16,14 +16,26 @@ export const getRandomOperator = () => {
 }
 
 export const calculateGCD = (a, b) => {
-      while (b !== 0) {
-        const temp = b;
-        b = a % temp;
-        a = temp;
-      }
-      return a;
+  while (b !== 0) {
+    const temp = b
+    b = a % temp
+    a = temp
   }
+  return a
+}
 
 export const getRandomInt = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+export const isPrime = (num) => {
+  if (num <= 1) {
+    return false
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false
+    }
+  }
+  return true
 }
