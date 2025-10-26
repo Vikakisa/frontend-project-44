@@ -13,5 +13,5 @@ export const generateRound = () => {
   )
   const correctAnswer = progression[hiddenIndex]
   progression[hiddenIndex] = '..'
-  return { question: String(progression), correctAnswer }
+  return { question: progression.join(' '), correctAnswer }
 }
