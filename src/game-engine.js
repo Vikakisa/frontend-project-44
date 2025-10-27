@@ -1,9 +1,8 @@
 import { getName } from './cli.js'
+import { welcome } from './welcome.js'
 
 export const runGame = (gameDescription, generateRound) => {
-  console.log('Welcome to the Brain Games!')
-  const name = getName('May I have your name? ')
-  console.log('Hello, ' + name + '!')
+  const name = welcome()
   console.log(gameDescription)
 
   const roundsToWin = 3
