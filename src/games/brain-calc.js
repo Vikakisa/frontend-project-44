@@ -1,4 +1,10 @@
-import { getRandomNumber, getRandomOperator } from '../utils.js'
+import { getRandomNumber } from '../utils.js'
+
+const getRandomOperator = () => {
+  const operators = ['+', '-', '*']
+  const randomIndex = Math.floor(Math.random() * operators.length)
+  return operators[randomIndex]
+}
 
 export const gameDescription = 'What is the result of the expression?'
 

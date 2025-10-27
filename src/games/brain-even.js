@@ -1,4 +1,11 @@
-import { getRandomNumber, isNumberEven } from '../utils.js'
+import { getRandomNumber } from '../utils.js'
+
+const isNumberEven = (num) => {
+  if (num % 2 === 0) {
+    return true
+  }
+  return false
+}
 
 export const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".'
 

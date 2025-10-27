@@ -1,4 +1,13 @@
-import { getRandomNumber, calculateGCD } from '../utils.js'
+import { getRandomNumber } from '../utils.js'
+
+export const calculateGCD = (a, b) => {
+  while (b !== 0) {
+    const temp = b
+    b = a % temp
+    a = temp
+  }
+  return a
+}
 
 export const gameDescription = 'Find the greatest common divisor of given numbers.'
 
